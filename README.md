@@ -8,3 +8,6 @@
 - Colors: [wpgtk](https://github.com/deviantfero/wpgtk.git)
 - Editor: [neovim](https://github.com/neovim/neovim.git)
 - Dotfile Manager: [stow](https://git.savannah.gnu.org/git/stow.git) (optional)
+## Neovim Plugins
+- Theme: [dracuala/vim](https://github.com/dracula/vim.git)
+- Icons: [ryanoasis/vim-devicons](https://github.com/ryanoasis/vim-devicons.git)
