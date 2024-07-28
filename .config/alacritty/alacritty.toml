@@ -1,0 +1,27 @@
+import = ["/home/alberto/.config/alacritty/themes/wpg.toml"]
+
+[font]
+size = 8.5
+
+[font.normal]
+family = "MesloLGS NF"
+style = "Regular"
+
+[font.bold]
+family = "MesloLGS NF"
+style = "Bold"
+
+[font.italic]
+family = "MesloLGS NF"
+style = "Italic"
+
+[font.bold_italic]
+family = "MesloLGS NF"
+style = "Bold Italic"
+
+[window]
+opacity = 0.5
+
+[window.padding]
+x = 5
+y = 5
