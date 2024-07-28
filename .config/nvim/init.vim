@@ -23,6 +23,7 @@ call plug#begin()
         Plug 'nvim-telescope/telescope.nvim',{'branch':'release'}
         Plug 'nvim-treesitter/nvim-treesitter', {'do':'TSUpdate'}
         Plug 'preservim/nerdcommenter'
+        Plug 'xiyaowong/transparent.nvim'
 call plug#end()
 
 " Colorscheme
