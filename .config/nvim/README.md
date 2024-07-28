@@ -7,7 +7,7 @@
 - Tagbar: [perservim/tagbar](https://github.com/preservim/tagbar)
 - Statusbar: [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline)
 - Text Completion: [neoclide/coc.nvim](https://github.com/neoclide/coc.nvim) (requires nodejs)
-- Treesitter: [nvim/treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treestiter)
+- Treesitter: [nvim/treesitter/nvim-treesitter](https://github.com/nvim-treesitter/nvim-treestitter)
 - Lua: [nvim-lua/plenary.nvim](https://github.com/nvim-lua/plenary.nvim)
 - Fuzzy Finder: [nvim-telescope/telescope.nvim](https://github.com/nvim-telescope/telescope.nvim.git)
 ## Misc
