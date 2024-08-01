@@ -8,3 +8,21 @@
 - Colors: [wpgtk](https://github.com/deviantfero/wpgtk.git)
 - Editor: [neovim](https://github.com/neovim/neovim.git)
 - Dotfile Manager: [stow](https://git.savannah.gnu.org/git/stow.git) (optional)
+# Installation
+Make sure that you have stow installed, otherwise good luck doing the setup manually.
+## Arch
+```
+$ sudo pacman -S stow
+```
+Clone the repo, and cd into it.
+```
+$ git clone https://github.com/arosario513/dotfiles.git
+$ cd dotfiles
+```
+Run the following command:
+```
+$ stow .
+```
+If everything goes well, the configs are symlinked in the right directories.
+# Conclusion
+Dotfiles are awesome!
