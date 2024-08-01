@@ -12,16 +12,16 @@
 Make sure that you have stow installed, otherwise good luck doing the setup manually.
 ## Arch
 ```
-$ sudo pacman -S stow
+sudo pacman -S stow
 ```
 Clone the repo, and cd into it.
 ```
-$ git clone https://github.com/arosario513/dotfiles.git
-$ cd dotfiles
+git clone https://github.com/arosario513/dotfiles.git
+cd dotfiles
 ```
 Run the following command:
 ```
-$ stow .
+stow .
 ```
 If everything goes well, the configs are symlinked in the right directories.
 # Conclusion
