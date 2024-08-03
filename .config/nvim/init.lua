@@ -1,5 +1,6 @@
 --- Variables 
 local vim = vim
+
 -- General Settings
 vim.o.tabstop=4
 vim.o.softtabstop=4

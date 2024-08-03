@@ -19,7 +19,7 @@ family = "MesloLGS NF"
 style = "Regular"
 
 [window]
-opacity = 0.6
+opacity = 0.7
 
 [window.padding]
 x = 5
