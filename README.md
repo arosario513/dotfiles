@@ -1,4 +1,4 @@
-[screenshot]!(./screenshot/png)
+![screenshot](./screenshot.png)
 
 # What's this?
 These are my dotfiles for my main laptop. This one has way more plugins and configs than the main branch.
