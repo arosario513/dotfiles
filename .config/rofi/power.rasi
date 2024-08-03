@@ -1,0 +1,16 @@
+inputbar {
+    children: [textbox-prompt-colon];
+}
+
+window {
+    width: 9em;
+}
+
+listview {
+    lines: 4;
+}
+
+#textbox-prompt-colon {
+    str: "⏻  Power Menu";
+}
+

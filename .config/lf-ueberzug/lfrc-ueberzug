@@ -1,0 +1,5 @@
+set previewer lf-ueberzug-previewer
+set cleaner lf-ueberzug-cleaner
+set hidden true
+set icons true
+set ignorecase true

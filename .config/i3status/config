@@ -1,0 +1,43 @@
+general {
+  output_format = "i3bar"
+  colors = true
+  color_good = "#50FA7B"
+  color_degraded = "#F1FA8C"
+  color_bad = "#707880"
+}
+
+order += "wireless _first_"
+order += "ethernet _first_"
+order += "battery all"
+order += "disk /"
+order += "load"
+order += "memory"
+order += "tztime local"
+
+wireless _first_ {
+        format_up = "wlan0 %essid %ip"
+        format_down = "wlan0 down"
+}
+
+ethernet _first_ {
+        format_up = "enp3s0 %ip"
+        format_down = "enp3s0 disconnected"
+}
+
+battery all {
+        format = "%status %percentage %remaining"
+}
+
+disk "/" {
+        format = "%avail"
+}
+
+load {
+        format = "%1min"
+}
+
+memory {
+        format = "%used / %available"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
