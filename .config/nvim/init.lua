@@ -17,6 +17,7 @@ vim.cmd("filetype plugin on")
 
 --- Plugins
 require('packer').startup(function(use)
+    use 'ap/vim-css-color'
     use 'wbthomason/packer.nvim'
     use 'mfussenegger/nvim-dap'
     use 'neovim/nvim-lspconfig'
@@ -29,20 +30,20 @@ require('packer').startup(function(use)
     use 'scrooloose/nerdtree'
     use 'nvim-lualine/lualine.nvim'
     use 'preservim/tagbar'
-    use 'hrsh7th/nvim-cmp'
     use 'BurntSushi/ripgrep'
+    use 'nvim-telescope/telescope.nvim'
+    use 'nvim-telescope/telescope-ui-select.nvim'
     use 'nvim-lua/plenary.nvim'
-    use 'preservim/nerdcommenter'
     use 'xiyaowong/transparent.nvim'
     use 'norcalli/nvim-colorizer.lua'
 end)
 
 --- Colorscheme
 vim.cmd[[colorscheme catppuccin-mocha]]
-
 --- Plugin Configurations
+require'colorizer'.setup({'*'})
 require('mason').setup()
-require("mason-lspconfig").setup()
+require('mason-lspconfig').setup()
 local custom_theme = require'lualine.themes.pywal'
 custom_theme.normal.a.bg = '#FF0000'
 custom_theme.normal.c.bg = '#202020'
@@ -51,22 +52,20 @@ require('lualine').setup{
     options = { theme = custom_theme }
 }
 
-local cmp = require'cmp'
-cmp.setup({
-  snippet = {
-    expand = function(args)
-      vim.fn["vsnip#anonymous"](args.body) -- Requires vsnip
-    end,
-  },
-  mapping = cmp.mapping.preset.insert({
-    ['<Tab>'] = cmp.mapping.select_next_item(),
-    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-  }),
-  sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'vsnip' },
-  })
-})
+local lspconfig = require('lspconfig')
+lspconfig.lua_ls.setup({})
+lspconfig.clangd.setup({})
+lspconfig.rust_analyzer.setup({})
+
+require('telescope').setup({
+    extensions = {
+        ["ui-select"] = {
+            require('telescope.themes').get_dropdown {
+            }
+        }
+    }
+ })
+ require('telescope').load_extension('ui-select')
 
 --- Key Bindings
 vim.g.mapleader=" "
@@ -75,4 +74,39 @@ vim.api.nvim_set_keymap(
     "<leader>e",
     ":NERDTreeToggle<CR>",
     { noremap = true }
+)
+
+vim.keymap.set(
+    "n",
+    "K",
+    vim.lsp.buf.hover,
+    {}
+)
+
+vim.keymap.set(
+    "n",
+    "gd",
+    vim.lsp.buf.definition,
+    {}
+)
+
+vim.keymap.set(
+    "n",
+    "<leader>ca",
+    vim.lsp.buf.code_action,
+    {}
+)
+
+local builtin = require('telescope.builtin')
+vim.keymap.set(
+    "n",
+    "<C-p>",
+    builtin.find_files,
+    {}
+)
+
+vim.keymap.set(
+    "n",
+    "<leader>f",
+    ":FZF<CR>"
 )
