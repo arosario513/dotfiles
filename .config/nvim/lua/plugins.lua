@@ -11,12 +11,6 @@ require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'mfussenegger/nvim-dap'
     use {
-        'neovim/nvim-lspconfig',
-        config = function()
-            require('configs.lspconfig')
-        end,
-    }
-    use {
         'williamboman/mason.nvim',
         config = function()
             require('mason').setup()
@@ -67,6 +61,20 @@ require('packer').startup(function(use)
         'hrsh7th/nvim-cmp',
         config = function()
             require('completions')
+        end,
+    }
+    use {
+        'nvimtools/none-ls.nvim',
+        config = function()
+            require('configs.null_ls')
+        end,
+    }
+
+    use 'nvimtools/none-ls-extras.nvim'
+    use {
+        'neovim/nvim-lspconfig',
+        config = function()
+            require('configs.lspconfig')
         end,
     }
 end)

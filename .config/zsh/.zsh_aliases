@@ -4,5 +4,5 @@ alias aslr-on='echo 1 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias wg-on='sudo wg-quick up wg0'
 alias wg-off='sudo wg-quick down wg0'
 alias lf='lf-ueberzug'
-alias wget='wget --hsts-file=$XDG_DATA_HOME/wget-hsts'
 alias sdots='tree -I .git -a ~/dotfiles'
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
