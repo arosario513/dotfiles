@@ -28,6 +28,13 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 │   │   └── lfrc-ueberzug
 │   ├── nvim
 │   │   ├── init.lua
+│   │   ├── lua
+│   │   │   ├── configs
+│   │   │   │   ├── lspconfig.lua
+│   │   │   │   ├── lualine.lua
+│   │   │   │   └── telescope.lua
+│   │   │   ├── plugins.lua
+│   │   │   └── settings.lua
 │   │   ├── README.md
 │   │   └── .stylua.toml
 │   ├── picom
