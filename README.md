@@ -29,6 +29,7 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 │   ├── nvim
 │   │   ├── init.lua
 │   │   ├── lua
+│   │   │   ├── completions.lua
 │   │   │   ├── configs
 │   │   │   │   ├── lspconfig.lua
 │   │   │   │   ├── lualine.lua
