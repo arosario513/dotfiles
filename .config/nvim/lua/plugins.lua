@@ -16,8 +16,18 @@ require('packer').startup(function(use)
             require('configs.lspconfig')
         end,
     }
-    use 'williamboman/mason.nvim'
-    use 'williamboman/mason-lspconfig.nvim'
+    use {
+        'williamboman/mason.nvim',
+        config = function()
+            require('mason').setup()
+        end,
+    }
+    use {
+        'williamboman/mason-lspconfig.nvim',
+        config = function()
+            require('mason-lspconfig').setup()
+        end,
+    }
     use 'mfussenegger/nvim-lint'
     use 'mhartington/formatter.nvim'
     use 'catppuccin/nvim'
@@ -42,7 +52,12 @@ require('packer').startup(function(use)
     use 'xiyaowong/transparent.nvim'
     use 'L3MON4D3/LuaSnip'
     use 'saadparwaiz1/cmp_luasnip'
-    use 'norcalli/nvim-colorizer.lua'
+    use {
+        'norcalli/nvim-colorizer.lua',
+        config = function()
+            require('colorizer').setup({'*'})
+        end,
+    }
     use 'rafamadriz/friendly-snippets'
     use 'hrsh7th/cmp-nvim-lsp'
     use 'hrsh7th/cmp-buffer'
