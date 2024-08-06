@@ -22,7 +22,7 @@ vim.cmd("filetype plugin on")
 vim.api.nvim_set_keymap(
     "n",
     "<leader>e",
-    ":NERDTreeToggle<CR>",
+    ":Neotree toggle<CR>",
     { noremap = true }
 )
 
