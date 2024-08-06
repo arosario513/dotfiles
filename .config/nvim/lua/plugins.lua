@@ -43,12 +43,6 @@ require('packer').startup(function(use)
     }
     use {'nvim-telescope/telescope-ui-select.nvim'}
     use {'nvim-lua/plenary.nvim'}
-    use {
-        'xiyaowong/transparent.nvim',
-        config = function()
-            require('transparent').clear_prefix('NeoTree')
-        end,
-    }
     use {'L3MON4D3/LuaSnip'}
     use {'saadparwaiz1/cmp_luasnip'}
     use {
