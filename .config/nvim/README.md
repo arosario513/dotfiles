@@ -21,7 +21,7 @@
 │   └── settings.lua
 └── .stylua.toml
 ```
-# Requirements
+## Requirements
 - Neovim (obviously)
 - Packer
 
