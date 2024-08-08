@@ -1,4 +1,6 @@
 ![neovim](https://github.com/user-attachments/assets/cf5a8f3c-9f3c-4ce3-b8f4-794bb7fd2ebb)
+![neovim2](https://github.com/user-attachments/assets/8d8d5422-758e-47ec-bed6-26aff7fab5cb)
+
 # Neovim Plugins
 ## Structure
 ```
