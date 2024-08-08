@@ -80,6 +80,7 @@ The setup doesn't change much, just the clone command.
 ## Requirements
 - i3
 - picom
+- polybar
 - nitrogen
 - stow
 - zsh + ohmyzsh
