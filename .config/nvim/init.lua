@@ -1,4 +1,5 @@
-require('settings')
-require('plugins')
+require "settings"
+require "keybinds"
+require "plugins"
 --- Colorscheme
-vim.cmd[[colorscheme catppuccin-mocha]]
+vim.cmd [[colorscheme catppuccin-mocha]]

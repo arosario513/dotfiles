@@ -3,6 +3,8 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 lspconfig.clangd.setup({capabilities = capabilities})
 lspconfig.rust_analyzer.setup({capabilities = capabilities})
 lspconfig.pylyzer.setup({capabilities = capabilities})
+lspconfig.csharp_ls.setup({capabilities = capabilities})
+lspconfig.eslint.setup({capabilities = capabilities})
 lspconfig.lua_ls.setup({
     capabilities = capabilities,
     on_init = function(client)
