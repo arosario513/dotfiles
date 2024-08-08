@@ -31,9 +31,14 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 │   │   ├── lua
 │   │   │   ├── completions.lua
 │   │   │   ├── configs
+│   │   │   │   ├── dashboard.lua
 │   │   │   │   ├── lspconfig.lua
 │   │   │   │   ├── lualine.lua
+│   │   │   │   ├── neotree.lua
+│   │   │   │   ├── none-ls.lua
+│   │   │   │   ├── null_ls.lua
 │   │   │   │   └── telescope.lua
+│   │   │   ├── keybinds.lua
 │   │   │   ├── plugins.lua
 │   │   │   └── settings.lua
 │   │   ├── README.md
