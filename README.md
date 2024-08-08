@@ -4,6 +4,7 @@
 These are my dotfiles for my main laptop. This one has way more plugins and configs than the main branch.
 # What I used in the screenshot
 - i3
+- alacritty
 - picom
 - polybar
 - btop
