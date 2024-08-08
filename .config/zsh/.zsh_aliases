@@ -1,4 +1,3 @@
-alias ghidra-auto='python3 /home/alberto/apps/auto_ghidra.py'
 alias aslr-off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias aslr-on='echo 1 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias wg-on='sudo wg-quick up wg0'
