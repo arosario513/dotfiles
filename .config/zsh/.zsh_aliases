@@ -5,3 +5,4 @@ alias wg-off='sudo wg-quick down wg0'
 alias lf='lf-ueberzug'
 alias sdots='tree -I .git -a ~/dotfiles'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias cd=z
