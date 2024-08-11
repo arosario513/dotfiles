@@ -33,6 +33,10 @@ Now have fun with your cool new setup
 │   ├── alacritty
 │   │   ├── alacritty.toml
 │   │   └── themes
+│   │       ├── catppuccin-frappe.toml
+│   │       ├── catppuccin-latte.toml
+│   │       ├── catppuccin-macchiato.toml
+│   │       ├── catppuccin-mocha.toml
 │   │       ├── dracula.toml
 │   │       ├── wlr.toml
 │   │       └── wpg.toml
@@ -55,13 +59,15 @@ Now have fun with your cool new setup
 │   │   ├── lua
 │   │   │   ├── completions.lua
 │   │   │   ├── configs
+│   │   │   │   ├── autotag.lua
 │   │   │   │   ├── dashboard.lua
 │   │   │   │   ├── lspconfig.lua
 │   │   │   │   ├── lualine.lua
 │   │   │   │   ├── neotree.lua
 │   │   │   │   ├── none-ls.lua
 │   │   │   │   ├── null_ls.lua
-│   │   │   │   └── telescope.lua
+│   │   │   │   ├── telescope.lua
+│   │   │   │   └── treesitter.lua
 │   │   │   ├── keybinds.lua
 │   │   │   ├── plugins.lua
 │   │   │   └── settings.lua
