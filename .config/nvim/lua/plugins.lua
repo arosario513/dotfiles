@@ -109,14 +109,35 @@ require("packer").startup(function(use)
 
   use {
     "nvim-treesitter/nvim-treesitter",
-    config = function ()
-        require("configs.treesitter")
+    config = function()
+      require "configs.treesitter"
     end,
     run = function()
       local ts_update = require("nvim.nvim-treesitter.install").update {
         with_sync = true,
       }
       ts_update()
+    end,
+  }
+
+  use {
+    "mfussenegger/nvim-dap-python",
+    requires = { "mfussenegger/nvim-dap" },
+    config = function()
+      require("dap-python").setup "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+    end,
+  }
+
+  use {
+    "linux-cultist/venv-selector.nvim",
+    branch = "regexp",
+    requires = {
+      "neovim/nvim-lspconfig",
+      "nvim-telescope/telescope.nvim",
+      "mfussenegger/nvim-dap-python",
+    },
+    config = function()
+      require("venv-selector").setup()
     end,
   }
 end)
