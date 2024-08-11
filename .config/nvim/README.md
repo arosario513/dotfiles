@@ -4,18 +4,20 @@
 # Neovim Plugins
 ## Structure
 ```
-.
+nvim
 ├── init.lua
 ├── lua
 │   ├── completions.lua
 │   ├── configs
+│   │   ├── autotag.lua
 │   │   ├── dashboard.lua
 │   │   ├── lspconfig.lua
 │   │   ├── lualine.lua
 │   │   ├── neotree.lua
 │   │   ├── none-ls.lua
 │   │   ├── null_ls.lua
-│   │   └── telescope.lua
+│   │   ├── telescope.lua
+│   │   └── treesitter.lua
 │   ├── keybinds.lua
 │   ├── plugins.lua
 │   └── settings.lua
