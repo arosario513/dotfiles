@@ -28,7 +28,7 @@ stow .
 Now have fun with your cool new setup
 # Dotfiles Folder Structure
 ```
-.
+dotfiles
 ├── .config
 │   ├── alacritty
 │   │   ├── alacritty.toml
