@@ -14,7 +14,6 @@ treesitter.setup {
         "markdown_inline",
     },
     auto_install = true,
-    autotag = { enable = true },
     highlight = { enable = true },
     indent = { enable = true },
 }
