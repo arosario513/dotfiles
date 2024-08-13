@@ -6,6 +6,7 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 - i3
 - alacritty
 - picom
+- freshfetch
 - polybar
 - btop
 - ncspot
