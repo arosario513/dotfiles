@@ -43,6 +43,9 @@ dotfiles
 │   │       └── wpg.toml
 │   ├── cava
 │   │   └── config
+│   ├── freshfetch
+│   │   ├── art.lua
+│   │   └── info.lua
 │   ├── i3
 │   │   └── config
 │   ├── i3status
