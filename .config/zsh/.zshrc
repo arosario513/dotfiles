@@ -10,13 +10,14 @@ fi
 
 # Path to your Oh My Zsh installation.
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
+export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 export PATH="$PATH:$HOME/.local/bin"
 export HISTFILE="$XDG_STATE_HOME/zsh/history"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="powerlevel10k/powerlevel10k"
+#ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -115,6 +116,39 @@ source $HOME/.config/zsh/.zshenv
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source "$ZDOTDIR/.zsh_aliases"
 
+zle-line-init() {
+  emulate -L zsh
+
+  [[ $CONTEXT == start ]] || return 0
+
+  while true; do
+    zle .recursive-edit
+    local -i ret=$?
+    [[ $ret == 0 && $KEYS == $'\4' ]] || break
+    [[ -o ignore_eof ]] || exit 0
+  done
+
+  local saved_prompt=$PROMPT
+  local saved_rprompt=$RPROMPT
+  PROMPT='$(STARSHIP_CONFIG=~/.config/starship/config-transient.toml starship prompt --terminal-width="$COLUMNS" --keymap="${KEYMAP:-}" --status="$STARSHIP_CMD_STATUS" --pipestatus="${STARSHIP_PIPE_STATUS[*]}" --cmd-duration="${STARSHIP_DURATION:-}" --jobs="$STARSHIP_JOBS_COUNT")'
+  RPROMPT=''
+  zle .reset-prompt
+  PROMPT=$saved_prompt
+  RPROMPT=$saved_rprompt
+
+  if (( ret )); then
+    zle .send-break
+  else
+    zle .accept-line
+  fi
+  return ret
+}
+
+zle -N zle-line-init
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ${ZDOTDIR:-~}/.p10k.zsh ]] || source ${ZDOTDIR:-~}/.p10k.zsh
+# [[ ! -f ${ZDOTDIR:-~}/.p10k.zsh ]] || source ${ZDOTDIR:-~}/.p10k.zsh
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
+
+# vim:filetype=bash

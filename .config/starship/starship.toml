@@ -1,0 +1,109 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$os\
+[](bg:red fg:black0)\
+$username\
+[](bg:dark_red fg:red)\
+$git_branch\
+$git_status\
+[](bg:black2 fg:dark_red)\
+$directory\
+[ ](bg:black1 fg:black2)\
+$nodejs\
+$c\
+$rust\
+[ ](bg:black0 fg:black1)\
+$time\
+[ ](fg:black0)\
+$line_break
+$character\
+"""
+
+palette = "wlr"
+
+[palettes.wlr]
+black0=     "#1c1c1c"
+black1=     "#252525"
+black2=     "#303030"
+white=      "#ffffff"
+purple=     "#b000ff"
+yellow=     "#ffff00"
+green=      "#00ff00"
+red=        "#ff0000"
+dark_red=   "#c00000"
+light_blue= "#00e0ff"
+orange=     "#ff8000"
+
+[os]
+disabled = false
+style = "bg:black0 fg:light_blue"
+format="[ 󰣇 ]($style)"
+
+[username]
+show_always = true
+style_user = "bold bg:red fg:black0"
+style_root = "bold bg:#ff0000 fg:#202020"
+format = '[ [ ](bold bg:red fg:black0) ($user) ]($style)'
+
+[git_branch]
+symbol = ""
+style = "bg:dark_red"
+format = '[[ $symbol $branch ](fg:white bg:dark_red)]($style)'
+
+[git_status]
+style = "bg:dark_red"
+format = '[[($all_status$ahead_behind )](fg:white bg:dark_red)]($style)'
+
+
+[directory]
+style = "bg:black2 fg:red"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+
+[directory.substitutions]
+"~"=            ""
+"Documents" =   "Documents 󰈙"
+"Downloads" =   "Downloads "
+"Music" =       "Music 󰝚"
+"Pictures" =    "Pictures "
+"Developer" =   "Developer 󰲋"
+
+
+[time]
+disabled =      false
+time_format=    "%I:%M%p"
+style =         "bg:black0 fg:red"
+format = '[[🕑](bold bg:black0 fg:white) ($time) ]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol =            '[](fg:green)'
+error_symbol =              '[](fg:red)'
+vimcmd_symbol =             '[](fg:green)'
+vimcmd_replace_one_symbol = '[](fg:purple)' 
+vimcmd_replace_symbol =     '[](fg:purple)'
+vimcmd_visual_symbol =      '[](fg:yellow)'
+
+[status]
+disabled = true
+
+[nodejs]
+symbol = ""
+style = "bg:green"
+format = '[[ $symbol( $version) ](bg:black1 fg:green)]($style)'
+
+[c]
+symbol = " "
+style = "bg:purple"
+format = '[[ $symbol( $version) ](bg:black1 fg:purple)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:orange"
+format = '[[ $symbol( $version) ](bg:black1 fg:orange)]($style)'

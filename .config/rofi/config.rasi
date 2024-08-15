@@ -7,7 +7,7 @@ configuration {
 }
 
 * {
-    font: "JetBrains Mono 12";
+    font: "system-ui 13";
     foreground: #f8f8f2;
     background-color: #282a36;
     active-background: #ff0000;

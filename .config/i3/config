@@ -59,7 +59,7 @@ bindsym $mod+Shift+d exec thunar
 bindsym $mod+Shift+f exec firefox
 
 # start a terminal
-bindsym $mod+Return exec alacritty
+bindsym $mod+Return exec kitty
 
 # kill focused window
 bindsym $mod+Shift+q kill

@@ -1,0 +1,47 @@
+palette = "wlr"
+
+[status]
+disabled=true
+
+[directory]
+disabled=true
+
+[git_branch]
+disabled=true
+
+[git_status]
+disabled=true
+
+[git_state]
+disabled=true
+
+[package]
+disabled=true
+
+[rust]
+disabled=true
+
+[nodejs]
+disabled=true
+
+[c]
+disabled=true
+
+[lua]
+disabled=true
+
+[python]
+disabled=true
+
+[line_break]
+disabled=true
+
+[palettes.wlr]
+purple=     "#b000ff"
+yellow=     "#ffff00"
+green=      "#00ff00"
+red=        "#ff0000"
+
+[character]
+disabled = false
+symbol = "❯"
