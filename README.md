@@ -50,6 +50,9 @@ dotfiles
 │   │   └── config
 │   ├── i3status
 │   │   └── config
+│   ├── kitty
+│   │   ├── kitty.conf
+│   │   └── wlr.conf
 │   ├── lf
 │   │   ├── colors
 │   │   ├── icons
@@ -93,6 +96,9 @@ dotfiles
 │   │   ├── lf-ueberzug
 │   │   ├── lf-ueberzug-cleaner
 │   │   └── lf-ueberzug-previewer
+│   ├── starship
+│   │   ├── config-transient.toml
+│   │   └── starship.toml
 │   ├── tmux
 │   │   └── tmux.conf
 │   ├── wpg
