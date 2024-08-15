@@ -15,7 +15,7 @@ $c\
 $rust\
 $python\
 [ ](bg:black0 fg:black1)\
-$time\
+$cmd_duration\
 [ ](fg:black0)\
 $line_break
 $character\
@@ -71,12 +71,17 @@ truncation_symbol = "…/"
 # "Pictures" =    "Pictures "
 # "Developer" =   "Developer 󰲋"
 
+[cmd_duration]
+disabled=false
+min_time=5000
+style="bg:black0 fg:#b00000"
+format = '[[ ](bg:black0 fg:white)($duration) ]($style)'
 
-[time]
-disabled =      false
-time_format=    "%I:%M%p"
-style =         "bg:black0 fg:red"
-format = '[[🕑](bold bg:black0 fg:white) ($time) ]($style)'
+# [time]
+# disabled =      false
+# time_format=    "%I:%M%p"
+# style =         "bg:black0 fg:red"
+# format = '[[🕑](bold bg:black0 fg:white) ($time) ]($style)'
 
 [line_break]
 disabled = false
