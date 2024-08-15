@@ -3,6 +3,9 @@ palette = "wlr"
 [status]
 disabled=true
 
+[cmd_duration]
+disabled=true
+
 [directory]
 disabled=true
 
