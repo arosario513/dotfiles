@@ -1,5 +1,5 @@
 export EDITOR="nvim"
-export TERMINAL="alacritty"
+export TERMINAL="kitty"
 export BROWSER="firefox"
 export LC_ALL=en_US.UTF-8
 export QT_QPA_PLATFORMTHEME=qt6ct
@@ -11,9 +11,9 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
-# ZSH enviroment variables
+# ZSH environment variables
 
-# XDG enviroment variables
+# XDG environment variables
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CONFIG_HOME="$HOME/.config"
 export XDG_STATE_HOME="$HOME/.local/state"
