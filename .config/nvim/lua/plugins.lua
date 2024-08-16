@@ -146,4 +146,6 @@ require("packer").startup(function(use)
   }
 
   use { "christoomey/vim-tmux-navigator" }
+
+  use { "mboughaba/i3config.vim" }
 end)
