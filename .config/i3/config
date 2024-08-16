@@ -67,6 +67,9 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 bindsym $mod+d exec rofi -show drun
 
+#start rofi-ykman (yubikey manager)
+bindsym $mod+y exec rofi-ykman
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
