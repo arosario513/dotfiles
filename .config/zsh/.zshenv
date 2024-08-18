@@ -11,6 +11,11 @@ export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
+export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME/jupyter"
+export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
+export ANDROID_USER_HOME="$XDG_DATA_HOME/android"
+export GDBHISTFILE="$XDG_CONFIG_HOME/gdb/.gdb_history"
+export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
 # ZSH environment variables
 
 # XDG environment variables
