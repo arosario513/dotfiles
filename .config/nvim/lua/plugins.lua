@@ -1,3 +1,17 @@
+-- Install Packer if it isn't already
+local ensure_packer = function()
+  local fn = vim.fn
+  local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+  if fn.empty(fn.glob(install_path)) > 0 then
+    fn.system { "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path }
+    vim.cmd [[packadd packer.nvim]]
+    return true
+  end
+  return false
+end
+
+local packer_bootstrap = ensure_packer
+
 -- Automatically run: PackerCompile
 vim.api.nvim_create_autocmd("BufWritePost", {
   group = vim.api.nvim_create_augroup("PACKER", { clear = true }),
@@ -19,7 +33,7 @@ require("packer").startup(function(use)
   use {
     "williamboman/mason-lspconfig.nvim",
     config = function()
-      require("mason-lspconfig").setup()
+      require "configs.mason-lspconfig"
     end,
   }
   use { "mfussenegger/nvim-lint" }
@@ -148,4 +162,8 @@ require("packer").startup(function(use)
   use { "christoomey/vim-tmux-navigator" }
 
   use { "mboughaba/i3config.vim" }
+
+  if packer_bootstrap then
+    require("packer").sync()
+  end
 end)
