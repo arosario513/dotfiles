@@ -8,7 +8,7 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 - starship
 - picom
 - cava
-- freshfetch
+- fastfetch
 - polybar
 - btop
 - ncspot
