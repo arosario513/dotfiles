@@ -9,3 +9,4 @@ alias cd=z
 alias c=clear
 alias fastfetch='fastfetch --kitty ~/Pictures/dedsec-skull.png --logo-width 30 --gpu-hide-type integrated'
 alias adb='HOME=$XDG_DATA_HOME/android adb' 
+alias ssh='kitten ssh'
