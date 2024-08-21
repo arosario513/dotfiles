@@ -1,8 +1,8 @@
+# Dotfiles
 ![screenshot](./screenshot.png)
-
-# What's this?
+## What's this?
 These are my dotfiles for my main laptop. This one has way more plugins and configs than the main branch.
-# What I used in the screenshot
+## What I used in the screenshot
 - i3
 - kitty
 - starship
@@ -14,10 +14,10 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 - ncspot
 - nitrogen
 - zsh + ohmyzsh
-# Setup
+## Setup
 NOTE: My zsh files are in $HOME/.config/zsh
 The setup doesn't change much, just the clone command.
-## Installation
+### Installation
 Clone the repo and cd into it
 ```
 git clone -b red https://github.com/arosario513/dotfiles.git
