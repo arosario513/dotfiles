@@ -163,7 +163,10 @@ require("packer").startup(function(use)
 
   use { "mboughaba/i3config.vim" }
 
-  if packer_bootstrap then
-    require("packer").sync()
-  end
+  use {
+    "folke/which-key.nvim",
+    config = function()
+      require("which-key").setup()
+    end,
+  }
 end)
