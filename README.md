@@ -15,7 +15,7 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 - nitrogen
 - zsh + ohmyzsh
 ## Setup
-NOTE: My zsh files are in $HOME/.config/zsh
+NOTE: My zsh files are in $HOME/.config/zsh, so make sure to move the files where your computer can access them.
 The setup doesn't change much, just the clone command.
 ### Installation
 Clone the repo and cd into it
