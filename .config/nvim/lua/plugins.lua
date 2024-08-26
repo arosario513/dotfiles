@@ -169,6 +169,18 @@ require("packer").startup(function(use)
             require("which-key").setup()
         end,
     }
+
+    use {
+        "epwalsh/obsidian.nvim",
+        tag = "*",
+        requires = {
+            "nvim-lua/plenary.nvim"
+        },
+        config = function()
+            require("configs.obsidian")
+        end
+    }
+
     if packer_bootstrap then
         require("packer").sync()
     end
