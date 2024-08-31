@@ -5,8 +5,4 @@ nvim_ts_autotag.setup {
         enable_rename = true,
         enable_close_on_trailing = false,
     },
-
-    aliases = {
-        ["javascriptreact"] = "html",
-    },
 }
