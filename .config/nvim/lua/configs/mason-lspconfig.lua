@@ -16,6 +16,7 @@ mason_lspconfig.setup {
     "typos_lsp",
     "csharp_ls",
     "rust_analyzer",
+    "java_language_server",
   },
   automatic_installation = true,
 }

@@ -23,7 +23,28 @@ vim.api.nvim_create_autocmd("BufWritePost", {
 require("packer").startup(function(use)
   use { "ap/vim-css-color" }
   use { "wbthomason/packer.nvim" }
-  use { "mfussenegger/nvim-dap" }
+  use {
+    "mfussenegger/nvim-dap",
+    config = function()
+      require "configs.debug"
+    end,
+  }
+  use {
+    "mfussenegger/nvim-jdtls",
+    config = function()
+      require("jdtls").start_or_attach {
+        cmd = { "/usr/bin/jdtls" },
+        root_dir = vim.fs.dirname(vim.fs.find({ "gradlew", ".git", "mvnw" }, { upward = true })[1]),
+      }
+    end,
+  }
+  use {
+    "rcarriga/nvim-dap-ui",
+    requires = {
+      "mfussenegger/nvim-dap",
+      "nvim-neotest/nvim-nio",
+    },
+  }
   use {
     "williamboman/mason.nvim",
     config = function()

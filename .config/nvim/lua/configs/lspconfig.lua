@@ -60,3 +60,5 @@ lspconfig.phpactor.setup {
     return vim.loop.cwd()
   end,
 }
+
+lspconfig.java_language_server.setup { capabilities = capabilities }
