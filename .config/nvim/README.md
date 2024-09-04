@@ -2,7 +2,9 @@
 ![neovim2](https://github.com/user-attachments/assets/8d8d5422-758e-47ec-bed6-26aff7fab5cb)
 
 # Neovim Plugins
+
 ## Structure
+
 ```
 nvim
 ├── init.lua
@@ -11,20 +13,25 @@ nvim
 │   ├── configs
 │   │   ├── autotag.lua
 │   │   ├── dashboard.lua
+│   │   ├── debug.lua
 │   │   ├── lspconfig.lua
 │   │   ├── lualine.lua
+│   │   ├── mason-lspconfig.lua
 │   │   ├── neotree.lua
 │   │   ├── none-ls.lua
 │   │   ├── null_ls.lua
+│   │   ├── obsidian.lua
 │   │   ├── telescope.lua
 │   │   └── treesitter.lua
 │   ├── keybinds.lua
 │   ├── plugins.lua
 │   └── settings.lua
-├── README.md
-└── .stylua.toml
+└── README.md
+
 ```
+
 ## Requirements
+
 - Neovim (obviously)
 - npm
 - Packer
