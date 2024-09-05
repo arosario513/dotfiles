@@ -47,7 +47,7 @@ lspconfig.lua_ls.setup {
 }
 
 lspconfig.pyright.setup { capabilities = capabilities }
-lspconfig.tsserver.setup { capabilities = capabilities }
+lspconfig.ts_ls.setup { capabilities = capabilities }
 lspconfig.intelephense.setup {
   capabilities = capabilities,
   root_dir = function(_)
@@ -62,3 +62,4 @@ lspconfig.phpactor.setup {
 }
 
 lspconfig.java_language_server.setup { capabilities = capabilities }
+lspconfig.yamlls.setup { capabilities = capabilities }
