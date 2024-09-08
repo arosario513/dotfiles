@@ -12,7 +12,7 @@ mason_lspconfig.setup {
     "marksman",
     "pyright",
     "pylsp",
-    "tsserver",
+    "ts_ls",
     "typos_lsp",
     "csharp_ls",
     "rust_analyzer",
