@@ -16,7 +16,11 @@ These are my dotfiles for my main laptop. This one has way more plugins and conf
 - zsh + ohmyzsh
 ## Setup
 NOTE: My zsh files are in $HOME/.config/zsh, so make sure to move the files where your computer can access them.
-The setup doesn't change much, just the clone command.
+If you want the zsh configs on $HOME/.config/zsh, make a file(if it doesn't exist) called zshenv on /etc/zsh with the following text
+```
+export ZDOTDIR="$HOME/.config/zsh"
+```
+Then move all your .zsh files to the .config/zsh dir
 ### Installation
 Clone the repo and cd into it
 ```
