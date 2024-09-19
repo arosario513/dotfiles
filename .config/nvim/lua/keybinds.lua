@@ -26,3 +26,5 @@ vim.keymap.set("n", "<leader>gl", ":Gitsigns toggle_current_line_blame<CR>", {})
 vim.keymap.set("n", "<leader>gd", ":Gitsigns diffthis<CR>", {})
 
 vim.keymap.set("n", "<leader>s", ":source<CR>", {})
+
+vim.keymap.set("n","<leader>v",":VenvSelect<CR>",{})
