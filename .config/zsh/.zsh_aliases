@@ -1,12 +1,12 @@
+alias adb='HOME=$XDG_DATA_HOME/android adb' 
 alias aslr-off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias aslr-on='echo 1 | sudo tee /proc/sys/kernel/randomize_va_space'
-alias wg-on='sudo wg-quick up wg0'
-alias wg-off='sudo wg-quick down wg0'
+alias c=clear
+alias cd=z
+alias fastfetch='fastfetch --kitty ~/Pictures/dedsec-skull.png --logo-width 30 --gpu-hide-type integrated'
 alias lf='lf-ueberzug'
 alias sdots='tree -I .git -a ~/dotfiles'
-alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias cd=z
-alias c=clear
-alias fastfetch='fastfetch --kitty ~/Pictures/dedsec-skull.png --logo-width 30 --gpu-hide-type integrated'
-alias adb='HOME=$XDG_DATA_HOME/android adb' 
 alias ssh='kitten ssh'
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias wg-off='sudo wg-quick down wg0'
+alias wg-on='sudo wg-quick up wg0'
