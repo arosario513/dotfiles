@@ -1,4 +1,4 @@
-import = ["/home/alberto/.config/alacritty/themes/wlr.toml"]
+import = ["/home/alberto/.config/alacritty/themes/red.toml"]
 [font]
 size = 8
 
