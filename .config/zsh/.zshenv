@@ -19,6 +19,10 @@ export TERMINAL="kitty"
 export W3M_DIR="$XDG_DATA_HOME/w3m"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
 
+# FZF Commands
+export FZF_CTRL_T_COMMAND="fd -H --type f --exclude $HOME/.local/share/wine --exclude .git"
+export FZF_ALT_C_COMMAND="fd -H --type d --exclude $HOME/.local/share/wine --exclude .git"
+
 # XDG environment variables
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
