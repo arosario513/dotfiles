@@ -12,7 +12,7 @@ super + d
 
 # make sxhkd reload its configuration files:
 super + shift + r
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd & bspc wm -r
 
 
 super + shift + d 
