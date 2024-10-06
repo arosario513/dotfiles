@@ -3,7 +3,15 @@
 picom -cb &
 
 nitrogen --restore &
-polybar &
+polybar -c config.ini left &
+polybar -c config.ini left-music &
+polybar -c config.ini center &
+polybar -c config.ini right-search &
+polybar -c config.ini right-mem &
+polybar -c config.ini right-cpu &
+polybar -c config.ini right-sys &
+polybar -c config.ini right-bat &
+polybar -c config.ini right-power &
 nm-applet &
 pa-applet &
 
@@ -12,8 +20,9 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 bspc config border_width            3
-bspc config normal_border_color     #303030
-bspc config window_gap              5
+bspc config normal_border_color     "#303030"
+bspc config focused_border_color    "#ff0000"
+bspc config window_gap              10
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
