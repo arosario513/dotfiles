@@ -25,7 +25,7 @@ exec --no-startup-id nitrogen --restore
 exec --no-startup-id lxpolkit
 exec --no-startup-id dex --autostart --environment i3
 exec --no-startup-id polybar
-exec_always --no-startup-id picom -cb --config $HOME/.config/picom/picom.conf
+exec_always --no-startup-id picom --experimental-backends -cb --config $HOME/.config/picom/picom.conf
 exec_always --no-startup-id autotiling
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
