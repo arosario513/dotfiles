@@ -1,7 +1,6 @@
 # Dotfiles
-![GitHub last commit](https://img.shields.io/github/last-commit/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=ff0000)
+![GitHub last commit](https://img.shields.io/github/last-commit/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=ff0000)![GitHub Repo stars](https://img.shields.io/github/stars/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=b00000)
 ![screenshot](./screenshot.png)
-![GitHub Repo stars](https://img.shields.io/github/stars/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=b00000)
 
 ## What's this?
 These are my dotfiles for my main laptop. This one has way more plugins and configs than the main branch.
