@@ -1,5 +1,5 @@
 # Dotfiles
-![GitHub last commit](https://img.shields.io/github/last-commit/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=ff0000)![GitHub Repo stars](https://img.shields.io/github/stars/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=b00000)
+![GitHub last commit](https://img.shields.io/github/last-commit/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=ff0000) ![GitHub Repo stars](https://img.shields.io/github/stars/arosario513/dotfiles?style=for-the-badge&labelColor=101010&color=b00000)
 ![screenshot](./screenshot.png)
 
 ## What's this?
