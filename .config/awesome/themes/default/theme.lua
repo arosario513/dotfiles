@@ -11,7 +11,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font = "MesloLGS NF 9"
+theme.font = "MesloLGS NF 10"
 
 theme.bg_normal = "#101010"
 theme.bg_focus = "#303030"
@@ -93,7 +93,7 @@ theme.titlebar_maximized_button_focus_inactive = themes_path .. "default/titleba
 theme.titlebar_maximized_button_normal_active = themes_path .. "default/titlebar/maximized_normal_active.png"
 theme.titlebar_maximized_button_focus_active = themes_path .. "default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = themes_path .. "default/background.png"
+theme.wallpaper = "/home/alberto/.config/awesome/themes/default/background.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path .. "default/layouts/fairhw.png"
@@ -114,7 +114,7 @@ theme.layout_cornersw = themes_path .. "default/layouts/cornersww.png"
 theme.layout_cornerse = themes_path .. "default/layouts/cornersew.png"
 
 -- Generate Awesome icon:
-theme.awesome_icon = theme_assets.awesome_icon(theme.menu_height, theme.bg_focus, theme.fg_focus)
+theme.awesome_icon = "/home/alberto/.config/awesome/themes/default/awesome.png"
 
 -- Define the icon theme for application icons. If not set then the icons
 -- from /usr/share/icons and /usr/share/icons/hicolor will be used.
