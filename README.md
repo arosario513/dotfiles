@@ -23,6 +23,13 @@ If you want the zsh configs on $HOME/.config/zsh, make a file(if it doesn't exis
 export ZDOTDIR="$HOME/.config/zsh"
 ```
 Then move all your .zsh files to the .config/zsh dir
+
+## Other Window Managers
+### BSPWM
+![screenshot-bspwm](https://github.com/user-attachments/assets/cbddd62f-f073-43d2-92ce-4f5ae1b86784)
+### AwesomeWM
+![screenshot-awesome](https://github.com/user-attachments/assets/95a05001-251a-4d9f-bd0d-0f351541b7a5)
+
 ### Installation
 Clone the repo and cd into it
 ```
