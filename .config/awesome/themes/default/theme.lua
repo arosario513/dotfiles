@@ -42,7 +42,7 @@ theme.layout_spiral = themes_path .. "default/layouts/spiral.png"
 -- Generate Awesome icon:
 theme.awesome_icon = "/home/alberto/.config/awesome/themes/default/awesome.png"
 
-theme.icon_theme = nil
+theme.icon_theme = "Papirus"
 
 return theme
 
