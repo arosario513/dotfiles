@@ -1,17 +1,19 @@
 #! /bin/sh
 
+POLYBAR_CONFIG="$HOME/.config/bspwm/config.ini"
+
 picom --experimental-backends -cb &
 
 nitrogen --restore &
-polybar -c config.ini left &
-polybar -c config.ini left-music &
-polybar -c config.ini center &
-polybar -c config.ini right-search &
-polybar -c config.ini right-mem &
-polybar -c config.ini right-cpu &
-polybar -c config.ini right-sys &
-polybar -c config.ini right-bat &
-polybar -c config.ini right-power &
+polybar -c "$POLYBAR_CONFIG" left &
+polybar -c "$POLYBAR_CONFIG" left-music &
+polybar -c "$POLYBAR_CONFIG" center &
+polybar -c "$POLYBAR_CONFIG" right-search &
+polybar -c "$POLYBAR_CONFIG" right-mem &
+polybar -c "$POLYBAR_CONFIG" right-cpu &
+polybar -c "$POLYBAR_CONFIG" right-sys &
+polybar -c "$POLYBAR_CONFIG" right-bat &
+polybar -c "$POLYBAR_CONFIG" right-power &
 nm-applet &
 pa-applet &
 
