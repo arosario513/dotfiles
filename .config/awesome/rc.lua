@@ -212,7 +212,6 @@ awful.screen.connect_for_each_screen(function(s)
             volume_widget({ widget_type = "horizontal_bar" }),
             ram_widget(),
             cpu_widget(),
-            battery_widget(),
             pacman_widget(),
             logout_menu_widget(),
         },
@@ -537,5 +536,6 @@ end)
 awful.spawn.with_shell("picom --experimental-backends -cb")
 awful.spawn.with_shell("nitrogen --restore")
 awful.spawn.with_shell("nm-applet")
+awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("pkill -x pa-applet; pa-applet")
 awful.spawn.with_shell("xfce4-clipman")
