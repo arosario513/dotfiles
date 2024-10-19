@@ -461,6 +461,7 @@ awful.rules.rules = {
                 "Wpa_gui",
                 "veromix",
                 "xtightvncviewer",
+                "xfce-polkit",
             },
             name = {
                 "Event Tester", -- xev.
