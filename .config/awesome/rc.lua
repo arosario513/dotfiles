@@ -213,6 +213,7 @@ awful.screen.connect_for_each_screen(function(s)
             ram_widget(),
             cpu_widget(),
             pacman_widget(),
+            battery_widget(),
             logout_menu_widget(),
         },
     })
@@ -463,6 +464,8 @@ awful.rules.rules = {
             },
             name = {
                 "Event Tester", -- xev.
+                "Bluetooth",
+                "Network Connections",
             },
             role = {
                 "AlarmWindow", -- Thunderbird's calendar.

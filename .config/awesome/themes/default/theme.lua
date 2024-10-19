@@ -2,7 +2,8 @@ local theme_assets = require("beautiful.theme_assets")
 local xresources = require("beautiful.xresources")
 local dpi = xresources.apply_dpi
 
-local themes_path = "/home/alberto/.config/awesome/themes/"
+local HOME = os.getenv("HOME")
+local themes_path = HOME .. "/.config/awesome/themes/"
 
 local theme = {}
 
@@ -40,7 +41,7 @@ theme.layout_max = themes_path .. "default/layouts/max.png"
 theme.layout_tile = themes_path .. "default/layouts/tiled.png"
 theme.layout_spiral = themes_path .. "default/layouts/spiral.png"
 -- Generate Awesome icon:
-theme.awesome_icon = "/home/alberto/.config/awesome/themes/default/awesome.png"
+theme.awesome_icon = themes_path .. "default/awesome.png"
 
 theme.icon_theme = "Papirus-Dark"
 
