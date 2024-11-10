@@ -18,6 +18,10 @@ export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export TERMINAL="kitty"
 export W3M_DIR="$XDG_DATA_HOME/w3m"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle"
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle"
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 
 # FZF Commands
 export FZF_CTRL_T_COMMAND="fd -H --type f --exclude $HOME/.local/share/wine --exclude .git"
