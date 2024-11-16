@@ -13,7 +13,7 @@ theme.bg_normal = "#101010"
 theme.bg_focus = "#303030"
 theme.bg_urgent = "#ff0000"
 theme.bg_minimize = "#444444"
-theme.bg_systray = theme.bg_normal
+theme.bg_systray = "#202020"
 
 theme.fg_normal = "#aaaaaa"
 theme.fg_focus = "#ffffff"
