@@ -551,4 +551,4 @@ awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("pkill -x pa-applet; pa-applet")
 awful.spawn.with_shell("xfce4-clipman")
-awful.spawn.with_shell("killall xfce-polkit") -- pacman plugin already starts xfce-polkit
+awful.spawn.with_shell("killall xfce-polkit") -- pacman widget already starts xfce-polkit
