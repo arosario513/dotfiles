@@ -72,3 +72,4 @@ lspconfig.powershell_es.setup {
 lspconfig.dockerls.setup { capabilities = capabilities }
 lspconfig.vimls.setup { capabilities = capabilities }
 lspconfig.htmx.setup { capabilities = capabilities }
+lspconfig.jinja_lsp.setup { capabilities = capabilities }
