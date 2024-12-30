@@ -12,7 +12,7 @@ fi
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
 export PATH="$PATH:$HOME/.local/bin"
-export HISTFILE="$XDG_STATE_HOME/zsh/history"
+export HISTFILE="/dev/null"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
