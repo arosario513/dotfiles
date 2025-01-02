@@ -1,16 +1,21 @@
 # ZSH environment variables
 export ANDROID_USER_HOME="$XDG_DATA_HOME/android"
 export BROWSER="firefox"
+export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle"
+export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle"
+export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME/nv"
+export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
 export DOTNET_CLI_HOME="$XDG_DATA_HOME/dotnet"
 export EDITOR="nvim"
 export GDBHISTFILE="$XDG_CONFIG_HOME/gdb/.gdb_history"
+export GOPATH="$XDG_DATA_HOME/go" 
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"
-export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME/jupyter"
 export LC_ALL=en_US.UTF-8
 export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
+export PSQL_HISTORY="$XDG_DATA_HOME/psql_history"
 export PYENV_ROOT="$XDG_DATA_HOME/pyenv"
 export PYTHONSTARTUP="$HOME/python/pythonrc "
 export QT_QPA_PLATFORMTHEME=qt6ct
@@ -18,14 +23,11 @@ export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
 export TERMINAL="kitty"
 export W3M_DIR="$XDG_DATA_HOME/w3m"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
-export DOCKER_CONFIG="$XDG_CONFIG_HOME/docker"
-export BUNDLE_USER_CONFIG="$XDG_CONFIG_HOME/bundle"
-export BUNDLE_USER_CACHE="$XDG_CACHE_HOME/bundle"
-export BUNDLE_USER_PLUGIN="$XDG_DATA_HOME/bundle"
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME/java"
 
 # FZF Commands
-export FZF_CTRL_T_COMMAND="fd -H --type f --exclude $HOME/.local/share/wine --exclude .git"
 export FZF_ALT_C_COMMAND="fd -H --type d --exclude $HOME/.local/share/wine --exclude .git"
+export FZF_CTRL_T_COMMAND="fd -H --type f --exclude $HOME/.local/share/wine --exclude .git"
 
 # XDG environment variables
 export XDG_CACHE_HOME="$HOME/.cache"
