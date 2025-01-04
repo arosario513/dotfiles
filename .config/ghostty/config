@@ -1,6 +1,14 @@
+background-opacity = 0.9
 font-family = "FiraCode Nerd Font"
 font-family-bold = "FiraCode Nerd Font Bold"
 font-size = 12
-theme = "red"
-background-opacity = 0.9
 gtk-single-instance = true
+theme = "red"
+
+keybind = ctrl+h=new_split:down
+keybind = ctrl+v=new_split:right
+keybind = ctrl+enter=new_split:auto
+keybind = ctrl+j=goto_split:bottom
+keybind = ctrl+k=goto_split:top
+keybind = ctrl+shift+r=reload_config
+keybind = ctrl+e=equalize_splits
