@@ -235,8 +235,8 @@ root.buttons(gears.table.join(
 ))
 globalkeys = gears.table.join(
     awful.key({ modkey, "Shift" }, "f", function()
-        awful.spawn.with_shell("firefox")
-    end, { description = "start Firefox" }),
+        awful.spawn.with_shell("librewolf")
+    end, { description = "start LibreWolf" }),
     awful.key({ modkey, "Shift" }, "d", function()
         awful.spawn.with_shell("thunar")
     end, { description = "start thunar" }),
