@@ -16,7 +16,7 @@ vim.keymap.set("n", "<leader>tv", ":vsplit | terminal<CR>", {})
 vim.keymap.set("n", "gt", ":BufferNext<CR>", {})
 
 for i = 1, 9 do
-  vim.keymap.set("n", i .. "gt", ":BufferGoto " .. i .. "<CR>", {})
+    vim.keymap.set("n", i .. "gt", ":BufferGoto " .. i .. "<CR>", {})
 end
 
 vim.keymap.set("n", "<leader>?", ":WhichKey<CR>", {})
@@ -27,4 +27,6 @@ vim.keymap.set("n", "<leader>gd", ":Gitsigns diffthis<CR>", {})
 
 vim.keymap.set("n", "<leader>s", ":source<CR>", {})
 
-vim.keymap.set("n","<leader>v",":VenvSelect<CR>",{})
+vim.keymap.set("n", "<leader>v", ":VenvSelect<CR>", {})
+
+vim.keymap.set("n", "<leader>m", ":Mason<CR>", {})
