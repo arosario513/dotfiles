@@ -65,7 +65,7 @@ require("packer").startup(function(use)
     use {
         "nvim-lualine/lualine.nvim",
         config = function()
-            require "configs.lualine"
+            require("lualine").setup()
         end,
     }
     use { "preservim/tagbar" }
