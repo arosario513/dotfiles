@@ -15,12 +15,8 @@ dap.listeners.before.event_exited.dapui_config = function()
 end
 
 dap.adapters.codelldb = {
-  type = "server",
-  port = "${port}",
-  executable = {
-    command = "/usr/bin/codelldb",
-    args = { "--port", "${port}" },
-  },
+  type = "executable",
+  command = "codelldb",
 }
 
 dap.configurations.cpp = {
@@ -39,7 +35,7 @@ dap.configurations.cpp = {
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
 
-dap.adapters.java = {
+--[[dap.adapters.java = {
   type = "executable",
   command = "java",
   args = { "-jar", "/path/to/java-debug/com.microsoft.java.debug.plugin/target/com.microsoft.java.debug.plugin-*.jar" },
@@ -57,7 +53,7 @@ dap.configurations.java = {
       return vim.fn.input("Project Root > ", vim.fn.getcwd(), "file")
     end,
   },
-}
+}--]]
 
 -- DAP keybinds
 vim.keymap.set("n", "<leader>dt", dap.toggle_breakpoint, {})
