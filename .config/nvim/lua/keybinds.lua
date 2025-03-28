@@ -30,3 +30,5 @@ vim.keymap.set("n", "<leader>s", ":source<CR>", {})
 vim.keymap.set("n", "<leader>v", ":VenvSelect<CR>", {})
 
 vim.keymap.set("n", "<leader>m", ":Mason<CR>", {})
+
+vim.keymap.set("n", "<leader>bc", ":BufferClose<CR>", {})
