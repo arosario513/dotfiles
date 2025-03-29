@@ -2,9 +2,9 @@
 
 vim.api.nvim_set_keymap("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true })
 
-vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
+vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
+vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
 
 vim.keymap.set("n", "<leader>f", ":FZF<CR>")
 
@@ -32,3 +32,6 @@ vim.keymap.set("n", "<leader>v", ":VenvSelect<CR>", {})
 vim.keymap.set("n", "<leader>m", ":Mason<CR>", {})
 
 vim.keymap.set("n", "<leader>bc", ":BufferClose<CR>", {})
+vim.keymap.set("n", "<leader>bn", ":BufferMoveNext<CR>", {})
+vim.keymap.set("n", "<leader>bp", ":BufferMovePrevious<CR>", {})
+vim.keymap.set("n", "<leader>bs", ":BufferMoveStart<CR>", {})
