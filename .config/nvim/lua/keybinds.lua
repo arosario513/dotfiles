@@ -6,8 +6,6 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
 
-vim.keymap.set("n", "<leader>f", ":FZF<CR>")
-
 vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", {})
 
 vim.keymap.set("n", "<leader>th", ":split | terminal<CR>", {})
