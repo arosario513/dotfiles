@@ -487,6 +487,18 @@ awful.rules.rules = {
 
     -- Add titlebars to normal clients and dialogs
     { rule_any = { type = { "normal", "dialog" } }, properties = { titlebars_enabled = false } },
+
+    {
+        rule_any = {
+            class = {
+                "qFlipper",
+            },
+        },
+        properties = {
+            border_width = 0,
+            titlebars_enabled = false,
+        }
+    },
 }
 client.connect_signal("manage", function(c)
     if awesome.startup and not c.size_hints.user_position and not c.size_hints.program_position then
