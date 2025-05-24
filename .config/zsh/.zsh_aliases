@@ -15,3 +15,4 @@ alias tor-on='sudo systemctl start tor'
 alias wg-off='sudo wg-quick down wg0'
 alias wg-on='sudo wg-quick up wg0'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+alias ls="eza --icons"
