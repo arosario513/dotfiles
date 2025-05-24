@@ -222,6 +222,12 @@ require("packer").startup(function(use)
     end,
   }
 
+  use {
+    "chomosuke/typst-preview.nvim",
+    config = function()
+      require("typst-preview").setup()
+    end,
+  }
   if packer_bootstrap then
     require("packer").sync()
   end
