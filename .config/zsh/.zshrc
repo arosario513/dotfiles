@@ -11,7 +11,7 @@ fi
 # Path to your Oh My Zsh installation.
 export ZSH="$XDG_DATA_HOME/oh-my-zsh"
 export STARSHIP_CONFIG="$XDG_CONFIG_HOME/starship/starship.toml"
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$CARGO_HOME/bin"
 export HISTFILE="/dev/null"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
