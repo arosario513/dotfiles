@@ -46,6 +46,12 @@ require("packer").startup(function(use)
     },
   }
   use {
+    "rcarriga/nvim-notify",
+    config = function()
+      require("notify").setup()
+    end,
+  }
+  use {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
