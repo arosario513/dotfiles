@@ -183,7 +183,7 @@ require("packer").startup(function(use)
       "mfussenegger/nvim-dap-python",
     },
     config = function()
-      require("venv-selector").setup()
+      require("venv-selector").setup({})
     end,
   }
 
