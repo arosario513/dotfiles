@@ -66,6 +66,7 @@ lspconfig.djlsp.setup { capabilities = capabilities }
 lspconfig.ruff.setup { capabilities = capabilities }
 lspconfig.bacon_ls.setup { capabilities = capabilities }
 lspconfig.tinymist.setup { capabilities = capabilities }
+lspconfig.glint.setup { capabilities = capabilities }
 
 vim.api.nvim_create_autocmd("LspAttach", {
   group = vim.api.nvim_create_augroup("lsp_attach_disable_ruff_hover", { clear = true }),
