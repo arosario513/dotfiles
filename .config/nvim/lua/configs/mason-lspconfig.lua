@@ -13,7 +13,6 @@ mason_lspconfig.setup {
         "marksman",
         "pyright",
         "ruff",
-        "rust_analyzer",
         "ts_ls",
         "typos_lsp",
     },

@@ -1,6 +1,10 @@
+require("dapui").setup()
 local dap = require "dap"
 local dapui = require "dapui"
 
+dap.listeners.after.event_initialized.dapui_config = function()
+  dapui.open()
+end
 dap.listeners.before.attach.dapui_config = function()
   dapui.open()
 end
