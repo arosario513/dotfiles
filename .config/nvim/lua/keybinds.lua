@@ -21,7 +21,7 @@ vim.keymap.set("n", "<leader>?", ":WhichKey<CR>", {})
 
 vim.keymap.set("n", "<leader>gh", ":Gitsigns preview_hunk<CR>", {})
 vim.keymap.set("n", "<leader>gl", ":Gitsigns toggle_current_line_blame<CR>", {})
-vim.keymap.set("n", "<leader>gd", ":Gitsigns diffthis<CR>", {})
+vim.keymap.set("n", "<leader>gD", ":Gitsigns diffthis<CR>", {})
 
 vim.keymap.set("n", "<leader>s", ":source<CR>", {})
 
@@ -33,3 +33,5 @@ vim.keymap.set("n", "<leader>bc", ":BufferClose<CR>", {})
 vim.keymap.set("n", "<leader>bn", ":BufferMoveNext<CR>", {})
 vim.keymap.set("n", "<leader>bp", ":BufferMovePrevious<CR>", {})
 vim.keymap.set("n", "<leader>bs", ":BufferMoveStart<CR>", {})
+vim.keymap.set("n", "<leader>dd", vim.diagnostic.open_float, { desc = "Show Diagnostics" })
+vim.keymap.set("n", "<leader>dr", ":RustLsp renderDiagnostic<CR>", { desc = "Show Diagnostics (RustLsp)" })
