@@ -150,4 +150,5 @@ zle -N zle-line-init
 # [[ ! -f ${ZDOTDIR:-~}/.p10k.zsh ]] || source ${ZDOTDIR:-~}/.p10k.zsh
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+eval $(chatgpt --set-completions zsh)
 # vim:filetype=bash
