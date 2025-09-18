@@ -176,7 +176,6 @@ require("packer").startup(function(use)
 
   use {
     "linux-cultist/venv-selector.nvim",
-    branch = "regexp",
     requires = {
       "neovim/nvim-lspconfig",
       "nvim-telescope/telescope.nvim",
