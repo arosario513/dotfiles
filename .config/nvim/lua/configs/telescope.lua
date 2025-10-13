@@ -1,13 +1,13 @@
-require("telescope").setup {
-    extensions = {
-        ["ui-select"] = {
-            require("telescope.themes").get_dropdown {},
-        },
-    },
-}
-require("telescope").load_extension "ui-select"
+require("telescope").setup({
+	extensions = {
+		["ui-select"] = {
+			require("telescope.themes").get_dropdown({}),
+		},
+	},
+})
+require("telescope").load_extension("ui-select")
 
-local builtin = require "telescope.builtin"
+local builtin = require("telescope.builtin")
 
 vim.keymap.set("n", "<leader>fC", builtin.colorscheme, { desc = "Colorscheme" })
 vim.keymap.set("n", "<leader>fc", builtin.command_history, { desc = "Command History" })

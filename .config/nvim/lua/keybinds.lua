@@ -2,6 +2,7 @@
 
 vim.api.nvim_set_keymap("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true })
 
+vim.keymap.set("n", "<leader>l", ":Lazy<CR>", {})
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Goto Definition" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code Actions" })
@@ -14,7 +15,7 @@ vim.keymap.set("n", "<leader>tv", ":vsplit | terminal<CR>", {})
 vim.keymap.set("n", "gt", ":BufferNext<CR>", {})
 
 for i = 1, 9 do
-    vim.keymap.set("n", i .. "gt", ":BufferGoto " .. i .. "<CR>", {})
+	vim.keymap.set("n", i .. "gt", ":BufferGoto " .. i .. "<CR>", {})
 end
 
 vim.keymap.set("n", "<leader>?", ":WhichKey<CR>", {})

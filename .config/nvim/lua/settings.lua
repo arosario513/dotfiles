@@ -16,6 +16,6 @@ o.cursorline = true
 o.termguicolors = true
 
 -- Other Configurations
-vim.cmd "syntax enable"
-vim.cmd "filetype plugin indent on"
-vim.cmd "filetype plugin on"
+vim.cmd("syntax enable")
+vim.cmd("filetype plugin indent on")
+vim.cmd("filetype plugin on")
