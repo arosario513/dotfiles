@@ -1,0 +1,8 @@
+require("keybinds.buffer")
+require("keybinds.fzf")
+require("keybinds.general")
+require("keybinds.gitsigns")
+require("keybinds.lsp")
+require("keybinds.terminal")
+require("keybinds.terminal")
+require("keybinds.trouble")

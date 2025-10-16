@@ -32,9 +32,12 @@ return {
 	{
 		"folke/noice.nvim",
 		dependencies = {
+			"ibhagwan/fzf-lua",
 			"MunifTanjim/nui.nvim",
 		},
-		opts = {},
+        config = function ()
+            require("configs.noice")
+        end
 	},
 	{
 		"folke/trouble.nvim",
