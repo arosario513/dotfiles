@@ -25,6 +25,10 @@ return {
 		opts = {},
 	},
 	{
+		"nvim-mini/mini.pairs",
+		opts = {},
+	},
+	{
 		"windwp/nvim-ts-autotag",
 		config = function()
 			require("configs.autotag")
