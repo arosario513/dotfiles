@@ -45,7 +45,21 @@ return {
     },
     {
         "folke/which-key.nvim",
-        opts = {},
+        opts = {
+            preset = "helix",
+            spec = {
+                {
+                    mode = { "n" },
+                    { "<leader>b", group = "Buffer" },
+                    { "<leader>c", group = "Code" },
+                    { "<leader>d", group = "Debug" },
+                    { "<leader>f", group = "Find" },
+                    { "<leader>g", group = "GitSigns" },
+                    { "<leader>t", group = "Terminal" },
+                    { "<leader>x", group = "Trouble" },
+                },
+            },
+        },
     },
     {
         "folke/todo-comments.nvim",

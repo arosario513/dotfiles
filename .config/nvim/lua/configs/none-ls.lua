@@ -7,5 +7,4 @@ null_ls.setup({
         require("none-ls.code_actions.eslint"),
         require("none-ls.diagnostics.eslint"),
     },
-    vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {}),
 })
