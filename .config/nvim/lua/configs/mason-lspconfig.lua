@@ -12,6 +12,7 @@ mason_lspconfig.setup({
 		"marksman",
 		"pyright",
 		"ruff",
+        "taplo",
 		"ts_ls",
 		"typos_lsp",
 	},

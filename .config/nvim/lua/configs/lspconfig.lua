@@ -1,4 +1,5 @@
 ---@diagnostic disable: param-type-mismatch
+---@diagnostic disable: undefined-global
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
 capabilities.offsetEncoding = { "utf-8" }
@@ -18,6 +19,7 @@ vim.lsp.enable("lemminx", { capabilities = capabilities })
 vim.lsp.enable("csharp_ls", { capabilities = capabilities })
 vim.lsp.enable("eslint", { capabilities = capabilities })
 vim.lsp.enable("bashls", { capabilities = capabilities })
+vim.lsp.enable("taplo", { capabilities = capabilities })
 
 vim.lsp.config("lua_ls", {
     on_init = function(client)
@@ -81,15 +83,17 @@ vim.lsp.enable("powershell_es", {
     bundle_path = vim.fn.stdpath("data") .. "/mason/packages/powershell-editor-services",
 })
 
+vim.lsp.enable("bacon_ls", { capabilities = capabilities })
+vim.lsp.enable("djlsp", { capabilities = capabilities })
 vim.lsp.enable("dockerls", { capabilities = capabilities })
-vim.lsp.enable("vimls", { capabilities = capabilities })
+vim.lsp.enable("glint", { capabilities = capabilities })
 vim.lsp.enable("htmx", { capabilities = capabilities })
 vim.lsp.enable("jinja_lsp", { capabilities = capabilities })
-vim.lsp.enable("djlsp", { capabilities = capabilities })
+vim.lsp.enable("postgres_lsp", { capabilities = capabilities })
 vim.lsp.enable("ruff", { capabilities = capabilities })
-vim.lsp.enable("bacon_ls", { capabilities = capabilities })
+vim.lsp.enable("sqlls", { capabilities = capabilities })
 vim.lsp.enable("tinymist", { capabilities = capabilities })
-vim.lsp.enable("glint", { capabilities = capabilities })
+vim.lsp.enable("vimls", { capabilities = capabilities })
 
 vim.lsp.inlay_hint.enable()
 

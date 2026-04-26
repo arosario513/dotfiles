@@ -75,8 +75,16 @@ mylauncher = awful.widget.launcher({ image = beautiful.awesome_icon, menu = myma
 menubar.utils.terminal = terminal -- Set the terminal for applications that require it
 mykeyboardlayout = awful.widget.keyboardlayout()
 
+local calendar_widget = require("awesome-wm-widgets.calendar-widget.calendar")
+local cw = calendar_widget()
+
 mytextclock = wibox.widget.textclock()
 mytextclock.format = "  %m/%d/%Y  %I:%M%p "
+mytextclock:connect_signal("button::press",
+    function (_, _, _, button)
+       if button == 1 then cw.toggle() end
+    end
+)
 
 -- Create a wibox for each screen and add it
 local taglist_buttons = gears.table.join(
@@ -211,6 +219,7 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             {
                 layout = wibox.layout.fixed.horizontal,
+                spacing = 8,
                 mpris_widget({ font = "MesloLGS NF 10" }),
                 net_speed_widget(),
                 wibox.widget.systray(),
@@ -563,4 +572,5 @@ awful.spawn.with_shell("nm-applet")
 awful.spawn.with_shell("xfce4-power-manager")
 awful.spawn.with_shell("pkill -x pa-applet; pa-applet")
 awful.spawn.with_shell("xfce4-clipman")
+awful.spawn.with_shell("openrazer-daemon -r")
 awful.spawn.with_shell("killall xfce-polkit") -- pacman widget already starts xfce-polkit

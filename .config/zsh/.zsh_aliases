@@ -2,12 +2,14 @@ alias adb='HOME=$XDG_DATA_HOME/android adb'
 alias aslr-off='echo 0 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias aslr-on='echo 1 | sudo tee /proc/sys/kernel/randomize_va_space'
 alias c=clear
+alias cat="bat --theme=TwoDark"
 alias cd=z
 alias exploitdb="/usr/share/exploitdb"
 alias fastfetch='fastfetch --kitty ~/Pictures/dedsec-skull.png --logo-width 30'
 alias i2p-off='sudo i2prouter stop'
 alias i2p-on='sudo i2prouter start'
 alias lf='lf-ueberzug'
+alias ls="eza --icons"
 alias sdots='tree -I .git -a ~/dotfiles'
 alias ssh='kitten ssh'
 alias tor-off='sudo systemctl stop tor'
@@ -15,4 +17,3 @@ alias tor-on='sudo systemctl start tor'
 alias wg-off='sudo wg-quick down wg0'
 alias wg-on='sudo wg-quick up wg0'
 alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
-alias ls="eza --icons"
